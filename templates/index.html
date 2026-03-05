@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoITR - AI-Powered Income Tax Filing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-calculator"></i>
+                    <span class="logo-text">AutoITR</span>
+                    <span class="logo-tagline">AI-Powered Tax Filing</span>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link active" data-section="home">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="#upload" class="nav-link" data-section="upload">
+                        <i class="fas fa-upload"></i> Upload
+                    </a>
+                    <a href="#results" class="nav-link" data-section="results">
+                        <i class="fas fa-chart-line"></i> Results
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Home Section -->
+        <section id="home-section" class="section active">
+            <div class="container">
+                <!-- Hero Section -->
+                <div class="hero">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-robot"></i>
+                            <span>AI-Powered Technology</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Transform Your Bank Statements into 
+                            <span class="gradient-text">ITR Files</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Automated Income Tax Return filing made simple and secure with 
+                            advanced AI technology including OCR, Machine Learning, and intelligent data extraction.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-lg" id="get-started-btn">
+                                <i class="fas fa-rocket"></i>
+                                Get Started Now
+                            </button>
+                            <button class="btn btn-secondary btn-lg" id="learn-more-btn">
+                                <i class="fas fa-play-circle"></i>
+                                Learn More
+                            </button>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <div class="stat-number">99%</div>
+                                <div class="stat-label">Accuracy Rate</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">5min</div>
+                                <div class="stat-label">Average Processing</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Secure & Private</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="features">
+                    <div class="section-header">
+                        <h2 class="section-title">Powerful Features</h2>
+                        <p class="section-subtitle">Everything you need for automated tax filing</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3 class="feature-title">OCR Technology</h3>
+                            <p class="feature-description">
+                                Advanced optical character recognition to extract text from PDFs and images with high accuracy
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="feature-title">AI Classification</h3>
+                            <p class="feature-description">
+                                Machine learning algorithms automatically categorize transactions into tax-relevant categories
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-file-invoice"></i>
+                            </div>
+                            <h3 class="feature-title">ITR Generation</h3>
+                            <p class="feature-description">
+                                Generate compliant ITR-1 and ITR-2 forms automatically with accurate tax calculations
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="feature-title">Secure Processing</h3>
+                            <p class="feature-description">
+                                All processing happens locally on your device. No data transmission or storage
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3 class="feature-title">Data Validation</h3>
+                            <p class="feature-description">
+                                Comprehensive validation checks ensure data accuracy and compliance
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <h3 class="feature-title">Multiple Formats</h3>
+                            <p class="feature-description">
+                                Export ITR files in JSON and XML formats ready for e-filing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How It Works -->
+                <div class="how-it-works">
+                    <div class="section-header">
+                        <h2 class="section-title">How It Works</h2>
+                        <p class="section-subtitle">Simple 3-step process to generate your ITR</p>
+                    </div>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Upload Statement</h3>
+                                <p>Upload your bank statement in PDF or image format</p>
+                            </div>
+                        </div>
+                        <div class="step-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>AI Processing</h3>
+                                <p>Our AI extracts and categorizes your transaction data</p>
+                            </div>
+                        </div>
+                        <div class="step-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Generate ITR</h3>
+                                <p>Download your completed ITR file ready for e-filing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section id="upload-section" class="section">
+            <div class="container">
+                <div class="upload-container">
+                    <div class="upload-header">
+                        <h2>Upload Your Bank Statement</h2>
+                        <p>Select your bank statement file to begin processing</p>
+                    </div>
+
+                    <form id="upload-form" enctype="multipart/form-data">
+                        <div class="upload-area" id="upload-area">
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <div class="upload-text">
+                                <h3>Drag & Drop Your File Here</h3>
+                                <p>or click to browse</p>
+                                <input type="file" id="file-input" name="file" accept=".pdf,.png,.jpg,.jpeg" hidden>
+                            </div>
+                            <div class="upload-formats">
+                                <span class="format-tag">PDF</span>
+                                <span class="format-tag">PNG</span>
+                                <span class="format-tag">JPG</span>
+                                <span class="format-tag">JPEG</span>
+                            </div>
+                            <div class="upload-info">
+                                <i class="fas fa-info-circle"></i>
+                                Maximum file size: 16MB
+                            </div>
+                        </div>
+
+                        <div id="file-preview" class="file-preview" style="display: none;">
+                            <div class="file-info">
+                                <div class="file-icon">
+                                    <i class="fas fa-file"></i>
+                                </div>
+                                <div class="file-details">
+                                    <div class="file-name"></div>
+                                    <div class="file-size"></div>
+                                </div>
+                                <button type="button" class="file-remove" id="remove-file">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="upload-actions">
+                            <button type="submit" class="btn btn-primary btn-lg" id="process-btn" disabled>
+                                <i class="fas fa-cog"></i>
+                                Process Bank Statement
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Processing Status -->
+                    <div id="processing-status" class="processing-status" style="display: none;">
+                        <div class="processing-header">
+                            <h3>Processing Your Bank Statement</h3>
+                            <p>Please wait while we analyze your data...</p>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <div class="processing-steps">
+                            <div class="processing-step active" id="step-upload">
+                                <i class="fas fa-upload"></i>
+                                <span>File Upload</span>
+                            </div>
+                            <div class="processing-step" id="step-ocr">
+                                <i class="fas fa-eye"></i>
+                                <span>OCR Processing</span>
+                            </div>
+                            <div class="processing-step" id="step-classify">
+                                <i class="fas fa-brain"></i>
+                                <span>AI Classification</span>
+                            </div>
+                            <div class="processing-step" id="step-validate">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Data Validation</span>
+                            </div>
+                            <div class="processing-step" id="step-generate">
+                                <i class="fas fa-file-invoice"></i>
+                                <span>ITR Generation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results-section" class="section">
+            <div class="container">
+                <div class="results-container">
+                    <div class="results-header">
+                        <h2>Processing Results</h2>
+                        <p>Review your extracted data and generated ITR</p>
+                    </div>
+
+                    <div id="results-content">
+                        <!-- Results will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Notification -->
+    <div id="notification" class="notification"></div>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

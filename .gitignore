@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+
+# Logs
+*.log
+
+# Uploads and generated files
+static/uploads/*
+generated/*
+
+# OS files
+.DS_Store
+Thumbs.db
